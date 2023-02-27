@@ -1,0 +1,25 @@
+@use "../presets" as *;
+@use "../mixins/" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  overflow-y: scroll;
+  font-family: $font-main;
+  font-size: $font-size;
+}
+body {
+  background-color: $color-white;
+  color: $color-gray;
+}
+h1 {
+}
+h2 {
+}
+a {
+  text-decoration: none;
+  color: $color-white;
+}

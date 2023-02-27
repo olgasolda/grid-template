@@ -1,0 +1,8 @@
+@use "../../presets" as *;
+@use "../../mixins/" as *;
+
+header {
+  position: relative;
+  color: $color-white;
+  background-color: $color-primary;
+}
