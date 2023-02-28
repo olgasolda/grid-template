@@ -190,7 +190,7 @@ template {
   -webkit-transition: background-color 0.5s;
        -o-transition: background-color 0.5s;
           transition: background-color 0.5s;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.1em;
 
   border: 2px solid #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
@@ -222,11 +222,13 @@ body {
 }
 
 h1 {
-  letter-spacing: 5px;
+  text-align: center;
+  letter-spacing: 0.08em;
 
   font-family: "Roboto Slab", serif;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 300;
+  line-height: 1.2;
 }
 
 a {
@@ -258,9 +260,7 @@ a {
   z-index: 1;
 }
 .header-content__title {
-  margin: 0 0 63px 0;
-
-  text-align: center;
+  margin: 0 0 53px 0;
 }
 .header-content__actions {
   display: -webkit-box;
@@ -276,15 +276,15 @@ a {
 .header-logo__link {
   display: block;
 
-  letter-spacing: 0.25em;
+  letter-spacing: 0.22em;
 
   font-size: 1.5rem;
 }
 .header-logo__accent {
   display: inline-block;
 
-  margin-right: 5px;
-  padding: 20px 9px 20px 7px;
+  margin-right: 4px;
+  padding: 14px 1px 13px 5px;
 
   border: 3px solid #d53d27;
 }
@@ -314,7 +314,7 @@ a {
   -ms-flex-pack: end;
   justify-content: end;
 
-  margin: 0;
+  margin: 0 -10px 0 0;
   padding: 0;
 
   list-style: none;
@@ -328,7 +328,7 @@ a {
 
   padding: 20px 10px;
 
-  letter-spacing: 0.11em;
+  letter-spacing: 0.1em;
 
   font-size: 1.125rem;
 }

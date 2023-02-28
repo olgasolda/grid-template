@@ -8,7 +8,7 @@
     grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
     justify-content: end;
 
-    @include unlist;
+    @include unlist(0 (-$gap-sm) 0 0);
   }
   // &__item {
   // }
@@ -16,7 +16,7 @@
     display: block;
     padding: $gap $gap-sm;
     font-size: 1.125rem;
-    letter-spacing: 0.11em;
+    letter-spacing: 0.1em;
     &:hover,
     &:focus {
       color: $color-accent;
