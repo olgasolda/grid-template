@@ -16,6 +16,10 @@ body {
   color: $color-gray;
 }
 h1 {
+  font-size: $gap-x3;
+  letter-spacing: 5px;
+  font-weight: 300;
+  font-family: $font-header;
 }
 h2 {
 }
