@@ -8,24 +8,27 @@
 }
 html {
   overflow-y: scroll;
+
   font-family: $font-main;
   font-size: $font-size;
 }
 body {
-  background-color: $color-white;
   color: $color-gray;
+  background-color: $color-white;
 }
 h1 {
-  font-size: 3.75rem;
-  letter-spacing: 0.08em;
-  font-weight: 300;
-  font-family: $font-header;
   text-align: center;
+  letter-spacing: 0.08em;
+
+  font-family: $font-header;
+  font-size: 3.75rem;
+  font-weight: 300;
   line-height: 1.2;
 }
 // h2 {
 // }
 a {
   text-decoration: none;
+
   color: $color-white;
 }

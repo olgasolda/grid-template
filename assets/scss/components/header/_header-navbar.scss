@@ -4,16 +4,17 @@
 .header-navbar {
   &__list {
     display: grid;
+    justify-content: end;
     gap: $gap;
     grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
-    justify-content: end;
     @include unlist(0 (-$gap-sm) 0 0);
   }
   &__link {
     display: block;
     padding: $gap $gap-sm;
-    font-size: 1.125rem;
     letter-spacing: 0.1em;
+    font-size: 1.125rem;
+
     &:hover,
     &:focus {
       color: $color-accent;
