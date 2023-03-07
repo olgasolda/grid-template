@@ -8,7 +8,14 @@
   &__title {
     z-index: 1;
     margin: 0;
+    letter-spacing: 0.1em;
     @include abs-position();
+    @include md-min {
+      font-size: 1.25rem;
+    }
+    @include md {
+      font-size: 1.125rem;
+    }
   }
 
   &__link {

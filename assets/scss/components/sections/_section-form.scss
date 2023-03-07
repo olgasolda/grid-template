@@ -1,2 +1,34 @@
 @use "../../presets" as *;
 @use "../../mixins/" as *;
+
+.form {
+  padding: $gap-lg 0;
+  background-color: $color-primary;
+
+  &__container {
+    @extend %container;
+    display: grid;
+    gap: $gap;
+
+    @include md-min {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include md-sm {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include sm {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .btn {
+width: 420px;
+background-color: rgba($color-white, 0.102);
+color: $color-white;
+font-weight: 400;
+font-family: "Roboto";
+  }
+}

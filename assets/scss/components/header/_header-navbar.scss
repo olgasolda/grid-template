@@ -2,22 +2,108 @@
 @use "../../mixins/" as *;
 
 .header-navbar {
-  &__list {
-    display: grid;
-    justify-content: end;
-    gap: $gap;
-    grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
-    @include unlist(0 (-$gap-sm) 0 0);
+  &__btn {
+    @include md-min {
+      display: none;
+    }
+    width: 30px;
+    height: 22.5px;
+    position: relative;
+    margin-left: auto;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
+    &-row {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: $color-white;
+      border-radius: 3px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0px;
+        transform-origin: left center;
+      }
+
+      &:nth-child(2) {
+        top: 9px;
+        transform-origin: left center;
+      }
+
+      &:nth-child(3) {
+        top: 18px;
+        transform-origin: left center;
+      }
+    }
+
+    &.-active span {
+      &:nth-child(1) {
+        transform: rotate(45deg);
+        top: -1.5px;
+        left: 4px;
+      }
+
+      &:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 19.5px;
+        left: 4px;
+      }
+    }
   }
+
+  &__list {
+    @include md-min {
+      display: grid;
+      justify-content: end;
+      gap: $gap;
+      grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
+      @include unlist(0 (-$gap-sm) 0 0);
+    }
+    @include md {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: $gap;
+      text-align: right;
+      background-color: rgba($color-gray-dark, 0.9);
+      @include box-shadow;
+      @include unlist;
+    }
+  }
+
+  &__item {
+    @include md {
+      margin: $gap $gap-sm;
+    }
+  }
+
   &__link {
     display: block;
-    padding: $gap $gap-sm;
     letter-spacing: 0.1em;
     font-size: 1.125rem;
 
-    &:hover,
-    &:focus {
-      color: $color-accent;
+    @include md-min {
+      padding: $gap $gap-sm;
     }
+
+    @include md {
+      padding: $gap-sm $gap;
+    }
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
   }
+}
 }
