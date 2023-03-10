@@ -5,9 +5,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   padding: 0.5em 1em;
+
   transition: background-color 0.5s;
   letter-spacing: 0.1em;
+
   border-width: 2px;
   border-style: solid;
 
@@ -20,22 +23,22 @@
   border-color: $color-white;
   background-color: rgba($color-white, 0.1);
 
-@include lg-min {
-  min-width: 250px;
-  min-height: 60px;
-  font-size: 1.125rem;
-}
-@include lg-md {
+  @include lg-min {
+    min-width: 250px;
+    min-height: 60px;
+    font-size: 1.125rem;
+  }
+  @include lg-md {
     min-width: 200px;
     min-height: 50px;
   }
-@include md {
+  @include md {
     min-width: 170px;
     min-height: 40px;
   }
- }
+}
 .btn--primary {
-  min-height: 60px;
+  height: 60px;
   border-color: $color-primary;
   background-color: rgba($color-primary, 0.8);
   font-size: 1.125rem;

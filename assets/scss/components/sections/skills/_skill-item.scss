@@ -9,10 +9,13 @@
     z-index: 1;
     margin: 0;
     letter-spacing: 0.1em;
+
     @include abs-position();
+
     @include md-min {
       font-size: 1.25rem;
     }
+
     @include md {
       font-size: 1.125rem;
     }
@@ -31,6 +34,7 @@
     transition: transform 0.25s;
     background-position: 50% 50%;
     background-size: cover;
+
     @include abs-position();
   }
 
@@ -38,6 +42,7 @@
     transition: opacity 0.25s;
     opacity: 0.8;
     background-color: $color-primary;
+
     @include abs-position();
   }
 

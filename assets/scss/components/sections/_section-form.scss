@@ -6,9 +6,10 @@
   background-color: $color-primary;
 
   &__container {
-    @extend %container;
     display: grid;
     gap: $gap;
+
+    @extend %container;
 
     @include md-min {
       grid-template-columns: repeat(3, 1fr);
@@ -29,8 +30,8 @@
   .btn--primary:hover,
   .btn--primary:focus {
     height: 60px;
-    background-color: $color-accent;
     border: 2px solid $color-white;
+    background-color: $color-accent;
   }
 
   .form-item {
@@ -58,8 +59,8 @@
     &__input:focus {
       border-color: rgba($color-white, 0.15);
       border-bottom-color: $color-white;
-      background-color: rgba($color-white, 0.15);
       outline: none;
+      background-color: rgba($color-white, 0.15);
 
       &::placeholder {
         color: $color-placeholder;
