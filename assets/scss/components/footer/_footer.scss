@@ -1,2 +1,22 @@
 @use "../../presets" as *;
 @use "../../mixins/" as *;
+
+
+.footer {
+  display: block;
+  padding: 50px 20px 70px;
+  text-align: center;
+  background-color: $color-primary;
+
+  &__container {
+
+  }
+
+  &__social {
+
+    }
+  
+  &__copy {
+
+  }
+}

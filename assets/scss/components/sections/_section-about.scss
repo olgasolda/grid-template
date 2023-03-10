@@ -84,17 +84,16 @@
     p:last-of-type {
       margin: 0;
     }
+  }
 
-    &__image {
-      display: grid;
-      justify-content: center;
-      align-content: center;
-      padding-top: 10px;
+  &__image {
+    display: grid;
+    justify-content: center;
+    align-content: center;
 
-      img {
-        max-height: 480px;
-        max-width: 100%;
-      }
+    img {
+      max-height: 480px;
+      max-width: 100%;
     }
   }
 }
