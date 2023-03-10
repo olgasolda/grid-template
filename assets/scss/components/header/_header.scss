@@ -3,10 +3,13 @@
 
 .header {
   position: relative;
+
   display: grid;
   align-items: center;
+
   min-height: 100vh;
   padding: 150px 0;
+
   color: $color-white;
   background-color: $color-primary;
   background-image: url(../img/img-header.png);

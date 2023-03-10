@@ -16,8 +16,8 @@
   &__actions {
     display: flex;
     justify-content: center;
-    gap: $gap;
 
+    gap: $gap;
     @include sm {
       align-items: center;
       flex-direction: column;

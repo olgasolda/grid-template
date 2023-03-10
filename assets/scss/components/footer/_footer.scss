@@ -3,7 +3,9 @@
 
 .footer {
   padding: 50px $gap 70px;
+
   text-align: center;
+
   background-color: $color-primary;
 
   &__container {
@@ -12,15 +14,21 @@
 
   &__social {
     position: relative;
+
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+
     margin-bottom: $gap-x2;
+
+    grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
 
     a {
       display: block;
+
       padding: 10px;
+
       transition: color 0.5s;
+
       color: $color-white;
       &:hover {
         color: $color-accent;
@@ -37,9 +45,12 @@
       position: absolute;
       bottom: -20px;
       left: calc(50% - 37.5px);
+
       width: 75px;
       height: 2px;
+
       content: "";
+
       background-color: rgba(255, 255, 255, 0.1);
     }
   }
@@ -48,12 +59,16 @@
     span {
       &:nth-of-type(1) {
         margin-right: -0.5em;
+
         letter-spacing: 0.33em;
+
         font-weight: 100;
       }
       &:nth-of-type(2) {
         letter-spacing: 0.05em;
+
         color: $color-gray-light;
+
         font-weight: 700;
       }
     }
