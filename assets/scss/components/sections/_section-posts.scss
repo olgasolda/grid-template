@@ -53,10 +53,11 @@
     display: flex;
     overflow: hidden;
     align-content: center;
-
+    
     background-color: $color-primary;
 
     img {
+      width: 100%;
       transition: transform 0.5s;
 
       object-fit: cover;
